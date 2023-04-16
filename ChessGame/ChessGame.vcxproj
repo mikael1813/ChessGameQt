@@ -83,6 +83,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="ChessPiece.cpp" />
+    <ClCompile Include="Square.cpp" />
     <ClCompile Include="TableViewModel.cpp" />
     <QtRcc Include="ChessGame.qrc" />
     <QtUic Include="ChessGame.ui" />
@@ -92,7 +94,9 @@
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="ChessPiece.h" />
     <ClInclude Include="Game.h" />
+    <ClInclude Include="Square.h" />
     <QtMoc Include="TableViewModel.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

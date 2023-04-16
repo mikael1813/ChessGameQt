@@ -13,12 +13,13 @@ class ChessGameGUI : public QMainWindow
 public:
     ChessGameGUI(QWidget *parent = nullptr);
     void adjustTableViewCellSize();
-    void onTableClicked(const QModelIndex&);
     ~ChessGameGUI();
+
+public:
+    void onTableClicked();
 
 private:
     Ui::ChessGameClass ui;
     TableViewModel* myModel;
-    Game* game;
     //QTableView board;
 };
